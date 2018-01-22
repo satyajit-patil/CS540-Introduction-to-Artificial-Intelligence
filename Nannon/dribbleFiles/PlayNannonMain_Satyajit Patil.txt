@@ -1,0 +1,9 @@
+% Running on host: DESKTOP-N69P40U
+NannonGUI:  setBounds: width = 1241, height = 721
+
+% This is the console of the Nannon GUI.
+% (Do a control-C here if the program appears to be hanging.)
+
+500,000 post burn-in games played so far.  Took 10 seconds.
+  Player X (spatil5) won 224,108 games (44.82%) and
+  Player O (spatil5) won 275,891 games (55.18%).
