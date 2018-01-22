@@ -1,0 +1,64 @@
+// This dataset is used to predict the quality of red wine based on various physicochemical properties.
+
+// The structure of this dataset is described below.
+// (we're using a very restricted design for simplicity).
+
+// You can visit
+//    http://archive.ics.uci.edu/ml/datasets/Wine+Quality
+// to see more about this dataset.
+
+// NOTE: Your code should handle both Windows-formatted and Linux-formatted files
+// (which, unfortunately, differ in how the end of line is represented).
+
+// Your code should HANDLE ANY AMOUNT OF 'white space,' including blank lines, BETWEEN TOKENS.
+
+// Note that you only need to handle '//' comments (ie, there will be no "/* */" comments.
+// It is easy in Java to the contents of a string BEFORE any '//' (might get the empty string,
+// which should also be ignored).
+
+// For simplicity, this dataset contains 20 boolean-valued features which were derived 
+// from the original 11 real-valued features. The boolean-valued features were generated
+// by normalizing (range 0-100) and discretizing the real-valued features. The threshold
+// values appear in the feature name. For example, fixedAcidityGt47 is T if the fixedAcidity 
+// of the example is greater than 47, and F if the fixedAcidity of the example is less than 47.
+
+// The number of features:
+3
+
+// Next are the feature names followed by a dash and then the legal values of this feature
+// In the CS 540 programming HWs related to decision trees, we will assume that all features have
+// two possible values, though they might have names other than the T and F used here (eg,
+// might have: "size - small big" in some other testbed used during grading).
+
+fixedAcidityGt47 - T F
+
+volatileAcidityGt17 - T F
+volatileAcidityGt29 - T F
+
+// The original class label was a rating of the wine on a scale from 0-10. In this dataset, ratings  
+// from 0-5 are combined into "lowToMid" and ratings from 6-10 are combined into "midToHigh".
+// Assume that for CS 540 HWs, only two values are possible for the class label.
+lowToMid
+midToHigh
+
+// The number of examples (will read this many in; ok to have more in the file)
+8
+
+// The examples (as mentioned above, we assume, for simplicity, that all features are BOOLEAN-VALUED, 
+// *though the names of the two values might differ across datasets*)
+
+//   First is the example's name, then its category, finally followed
+//   by the values of all of its features (listed in the order of the
+//   feature names above, will be separated by "whitespace"). 
+//   The (boring) names are simply used to concisely identify the examples.
+//   Your decision-tree learner should NOT use these names as a feature (what would happen if you did?).
+
+
+trainEx1 lowToMid T F T
+trainEx2 lowToMid F T T
+trainEx3 midToHigh T F F
+trainEx4 lowToMid F T F
+trainEx5 midToHigh F T F
+trainEx6 midToHigh F F F 
+trainEx7 lowToMid T F T 
+trainEx8 lowToMid F T T 
